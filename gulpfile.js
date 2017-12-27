@@ -22,6 +22,48 @@ var paths = {
 };
 
 
+/*
+* ======================================+
+* 모듈의 옵션 설정
+* ======================================+
+* */
+
+// * @scss : sass config(환경설정)
+
+var scssOptions = {
+    /**
+     * outputStyle (type: string, defualt : nested)
+     *css로 컴파일한 후의 코드스타일을 설정한다.
+     * values : nested, expanded, compact, compressed
+     * */
+    outputStyle : "expanded",
+
+    /**
+     * indentType(>= v3.0.0, type: string, default : space)
+     * 컴파일된 css의 들여쓰기 설정
+     * values : indent, tab
+     *
+     */
+    indentType : "tab",
+
+    /*
+    * indentWidth (>= v3.0.0, type: Integer, default: 2)
+    * 컴파일된 css의 '들여쓰기'의 갯수
+    * */
+    indentWidth : 1, //outputStyle이 nested, expaned의 경우에 사용
+
+    /*
+    * precision(type : integer, default: 5)
+    * 컴파일된 css의 소수점 자리수
+    * */
+    precision : 6,
+
+    /*
+    * sourcemComments (type: boolean, default: false)
+    * 컴파일된 css에 원본소스의 위치와 줄 수 주석표시
+    * */
+    sourceComments : true
+}
 
 // gulp.task(name, deps, func)
 // task에는 세 가지 파라미터가 있다.
@@ -68,46 +110,6 @@ gulp.task('watch', function() {
 })
 
 
-/**
- * =========================+
- * @scss : sass config(환경설정)
- * =========================+
- */
-var scssOptions = {
-    /**
-    * outputStyle (type: string, defualt : nested)
-     *css로 컴파일한 후의 코드스타일을 설정한다.
-     * values : nested, expanded, compact, compressed
-    * */
-    outputStyle : "expanded",
-
-    /**
-    * indentType(>= v3.0.0, type: string, default : space)
-     * 컴파일된 css의 들여쓰기 설정
-     * values : indent, tab
-    *
-     */
-    indentType : "tab",
-
-    /*
-    * indentWidth (>= v3.0.0, type: Integer, default: 2)
-    * 컴파일된 css의 '들여쓰기'의 갯수
-    * */
-    indentWidth : 1, //outputStyle이 nested, expaned의 경우에 사용
-
-    /*
-    * precision(type : integer, default: 5)
-    * 컴파일된 css의 소수점 자리수
-    * */
-    precision : 6,
-
-    /*
-    * sourcemComments (type: boolean, default: false)
-    * 컴파일된 css에 원본소스의 위치와 줄 수 주석표시
-    * */
-    sourceComments : true
-}
-
 /*
 * =============================+
 * @task : scss compile & sourcemaps
@@ -128,7 +130,6 @@ gulp.task('scss:compile', function (cb) {
 
     ],
     cb
-)
-
+    )
 })
 // stripDebug 모듈 (alert 와 console 코드를 삭제해주는 모듈)

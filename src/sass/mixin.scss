@@ -1,0 +1,10 @@
+@mixin highlight( $fontSize, $color, $decoration) {
+  color: $color;
+  font-size: $fontSize;
+  text-decoration: $decoration;
+}
+
+.header {
+  @include highlight( 2em, yellow, underline);
+  font-style: italic;
+}

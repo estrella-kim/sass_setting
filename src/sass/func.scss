@@ -1,0 +1,10 @@
+@function ratio( $width, $height) {
+  @return ($height/$width) * 100%;
+}
+@function realHeight( $width, $height) {
+  @return ratio($width, $height) * 100 * height;
+}
+
+.box {
+  padding-top: ratio( 100px, 300px);
+}

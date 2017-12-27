@@ -124,7 +124,7 @@ gulp.task('scss:compile', function (cb) {
 
         scss(scssOptions).on('error', scss.logError), //scss함수에 옵션값을 설정, scss작성시 watch가 멈추기않도록 logError을 설정
 
-        sourcemaps.write(), //위에서 생성한 소스맵을 사용한다.
+        sourcemaps.write({ }), //위에서 생성한 소스맵을 사용한다.
 
         gulp.dest(dist + '/css')
 

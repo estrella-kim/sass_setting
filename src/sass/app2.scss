@@ -1,0 +1,12 @@
+$font-l : 4em;
+
+p {
+  width: 4em;
+  height: 4em;
+  border: solid 1px #eee;
+  font-size: $font-l;
+}
+a {
+  display:inline-block;
+  @extend p;
+}

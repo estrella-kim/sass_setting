@@ -1,6 +1,31 @@
-body{
-  color: red;
+$primary-color : #333;
+#header{
+  $primary-color: red;
+  $width-l : 7em;
+  width: $width-l;
+    div{
+      color: $primary-color;
+    }
+    a{
+      $primary-color: yellow;
+      $width-l : 3em !global;
+      width: $width-l;
+      color: $primary-color;
+      &:hover{
+        background-color: green;
+      }
+      &.active{
+        background-color: blue;
+      }
+      @at-root p{
+        color: #fff;
+      }
+    }
+    ul{
+      color:$primary-color;
+    }
 }
-a{
-  text-decoration: none;
+#content{
+  color: $primary-color;
+  width: $width-l;
 }

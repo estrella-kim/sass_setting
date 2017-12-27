@@ -1,0 +1,14 @@
+/* line 3, src/sass/app2.scss */
+p, a {
+	width: 4em;
+	height: 4em;
+	border: solid 1px #eee;
+	font-size: 4em;
+}
+
+/* line 9, src/sass/app2.scss */
+a {
+	display: inline-block;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwMi5jc3MiLCJzb3VyY2VzIjpbImFwcDIuc2NzcyJdLCJzb3VyY2VzQ29udGVudCI6WyIkZm9udC1sIDogNGVtO1xyXG5cclxucCB7XHJcbiAgd2lkdGg6IDRlbTtcclxuICBoZWlnaHQ6IDRlbTtcclxuICBib3JkZXI6IHNvbGlkIDFweCAjZWVlO1xyXG4gIGZvbnQtc2l6ZTogJGZvbnQtbDtcclxufVxyXG5hIHtcclxuICBkaXNwbGF5OmlubGluZS1ibG9jaztcclxuICBAZXh0ZW5kIHA7XHJcbn0iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUVBLEFBQUEsQ0FBQyxFQU1ELEFBTkEsQ0FNQyxDQU5DO0NBQ0EsS0FBSyxFQUFFLEdBQUc7Q0FDVixNQUFNLEVBQUUsR0FBRztDQUNYLE1BQU0sRUFBRSxjQUFjO0NBQ3RCLFNBQVMsRUFORCxHQUFHO0NBT1o7OztBQUNELEFBQUEsQ0FBQyxDQUFDO0NBQ0EsT0FBTyxFQUFDLFlBQVk7Q0FFckIifQ== */

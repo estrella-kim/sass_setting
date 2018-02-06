@@ -32,7 +32,7 @@ var paths = {
 
 var scssOptions = {
     /**
-     * outputStyle (type: string, defualt : nested)
+     * outputStyle (type: string, default : nested)
      *css로 컴파일한 후의 코드스타일을 설정한다.
      * values : nested, expanded, compact, compressed
      * */

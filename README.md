@@ -249,3 +249,46 @@ arguments를 받을 수 있는 상속 directive이다.  선언 시 @mixin , 사�
 
 
 
+### 아키텍처
+```
+[디렉토리 구조]
+
+sass/
+|
+|– abstracts/  공통요소(폰트 색상, 버튼 색상 등)
+|   |– _variables.scss    # 변수
+|   |– _functions.scss    # 함수
+|   |– _mixins.scss       # Mixins
+|   |– _placeholders.scss # Placeholders
+|
+|– base/ 기본요소(폰트스타일, 마진, 패딩, 태그 디폴트 속성) 
+|   |– _reset.scss        # Reset/normalize 
+|   |– _typography.scss   # Typography rules
+|   …                     # Etc.
+|
+|– pages/ 각 페이지들 
+|   |– content-list.scss # 컨텐츠관리
+|   |– campaign-direct-assign.scss     # 직접지급
+|   ...                  # Etc…
+|
+|– components/ 컴포넌트단위(버튼스타일 => 대강의 크기, 색상, on/off시 상태, 체크박스 , 드롭다운 등 )
+|   |– _buttons.scss      # 버튼
+|   |– _carousel.scss     # 캐러셀
+|   |– _checkbox.scss     # 체크박스
+|   |– _dropdown.scss     # 드롭다운
+|   …                     # Etc.
+|
+|– layout/ 레이아웃
+|   |– _header.scss       # 헤더
+|   |– _footer.scss       # 푸터
+|   |– _modal.scss        # 모달
+|   …                     # Etc.
+|
+|– vendors/ 헬퍼들
+|   |– _bootstrap.scss    # Bootstrap
+|   |– _jquery-ui.scss    # jQuery UI
+|   …                     # Etc.
+|
+`– _basic.scss              # 기본 요소들을 모아놓은 집합.
+
+```
